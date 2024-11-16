@@ -1,59 +1,41 @@
-<h1 align="center">Advanced Auth Tutorial 🔒 </h1>
+# 🔐 Node.js Authentication System
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![Mailtrap](https://img.shields.io/badge/Mailtrap-00B4AD?style=for-the-badge&logo=mailgun)
 
-[Video Tutorial on Youtube](https://youtu.be/pmvEgZC55Cg)
+A complete **authentication system** built with **Node.js** and **Express**, featuring secure JWT-based authentication, password reset via email, and account verification using **Mailtrap**.
 
-About This Course:
+## ✨ Features
 
--   🔧 Backend Setup
--   🗄️ Database Setup
--   🔐 Signup Endpoint
--   📧 Sending Verify Account Email
--   🔍 Verify Email Endpoint
--   📄 Building a Welcome Email Template
--   🚪 Logout Endpoint
--   🔑 Login Endpoint
--   🔄 Forgot Password Endpoint
--   🔁 Reset Password Endpoint
--   ✔️ Check Auth Endpoint
--   🌐 Frontend Setup
--   📋 Signup Page UI
--   🔓 Login Page UI
--   ✅ Email Verification Page UI
--   📤 Implementing Signup
--   📧 Implementing Email Verification
--   🔒 Protecting Our Routes
--   🔑 Implementing Login
--   🏠 Dashboard Page
--   🔄 Implementing Forgot Password
--   🚀 Super Detailed Deployment
--   ✅ This is a lot of work. Support my work by subscribing to the [Channel](https://www.youtube.com/@asaprogrammer_)
+- **JWT Authentication**: Secure user login and registration.
+- **Forgot Password**: Reset your password via email.
+- **Email Verification**: Confirm your account with an email link.
+- **Password Hashing**: Secure password storage using **bcrypt**.
+- **Mailtrap Integration**: Email sending for testing purposes.
+- **Environment Variables**: Securely manage sensitive information.
+- **RESTful API**: Clean and well-structured endpoints.
 
-### Setup .env file
+## 🛠️ Tech Stack
+
+- **Backend Framework**: Node.js, Express
+- **Authentication**: JWT, bcrypt
+- **Email Service**: Mailtrap
+- **Database**: MongoDB (or any other database)
+- **Languages**: JavaScript
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (v18.x.x and above)
+- **MongoDB** (local or cloud instance)
+- **Mailtrap Account** (for email testing)
+
+### Clone the Repository
 
 ```bash
-MONGO_URI=your_mongo_uri
-PORT=5000
-JWT_SECRET=your_secret_key
-NODE_ENV=development
-
-MAILTRAP_TOKEN=your_mailtrap_token
-MAILTRAP_ENDPOINT=https://send.api.mailtrap.io/
-
-CLIENT_URL= http://localhost:5173
-```
-
-### Run this app locally
-
-```shell
-npm run build
-```
-
-### Start the app
-
-```shell
-npm run start
-```
-
-### I'll see you in the next one! 🚀
+git clone https://github.com/yourusername/node-auth-system.git
+cd node-auth-system
+npm start
